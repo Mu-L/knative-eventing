@@ -7919,7 +7919,7 @@ Kubernetes meta/v1.LabelSelector
 <em>(Optional)</em>
 <p>LabelSelector filters this source to objects to those resources pass the
 label selector.
-More info: <a href="http://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors">http://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors</a></p>
+More info: <a href="https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors">https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors</a></p>
 </td>
 </tr>
 </tbody>

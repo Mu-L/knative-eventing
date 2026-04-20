@@ -20,7 +20,7 @@ Also take a look at:
 
 > :information_source: If you intend to use event sinks based on Knative
 > Services as described in some of our examples, consider installing
-> [Knative Serving](http://github.com/knative/serving). A few
+> [Knative Serving](https://github.com/knative/serving). A few
 > [Knative Extensions](https://github.com/knative-extensions/?q=eventing&type=&language=)
 > projects also have a dependency on Serving.
 

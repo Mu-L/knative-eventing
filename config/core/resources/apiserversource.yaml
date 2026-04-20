@@ -105,7 +105,7 @@ spec:
                       description: 'Kind of the resource to watch. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds'
                       type: string
                     selector:
-                      description: 'LabelSelector filters this source to objects to those resources pass the label selector. More info: http://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors'
+                      description: 'LabelSelector filters this source to objects to those resources pass the label selector. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors'
                       type: object
                       properties:
                         matchExpressions:
