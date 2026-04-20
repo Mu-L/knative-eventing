@@ -198,5 +198,5 @@ func TestDeliverySpecConversionV1(t *testing.T) {
 	}
 }
 
-// v1beta1 and v1 DeliveryStatus are not convertable to each other.
+// v1beta1 and v1 DeliveryStatus are not convertible to each other.
 // (channel ref vs apis.URL)

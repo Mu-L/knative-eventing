@@ -279,7 +279,7 @@ func WithChannelTemplate(template channel_template.ChannelTemplate) manifest.Cfg
 	}
 }
 
-// ValidateAddress validates the address retured by Address
+// ValidateAddress validates the address returned by Address
 func ValidateAddress(name string, validate addressable.ValidateAddressFn, timings ...time.Duration) feature.StepFn {
 	return addressable.ValidateAddress(GVR(), name, validate, timings...)
 }

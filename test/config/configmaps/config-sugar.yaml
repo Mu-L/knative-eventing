@@ -38,7 +38,7 @@ data:
   #       values: ["enabled"]
   #
   # Useful labels include the "kubernetes.io/metadata.name" label to
-  # avoid Sugar opearting on "kube-system" namespaces.
+  # avoid Sugar operating on "kube-system" namespaces.
   #
   namespace-selector: |
     matchExpressions:

@@ -76,7 +76,7 @@ func (a *resourceDelegate) handleKubernetesObject(makeEvent makeEventFunc, obj i
 	return nil
 }
 
-// sendCloudEvent sends a cloudevent everytime k8s api event is created, updated or deleted.
+// sendCloudEvent sends a cloudevent every time k8s api event is created, updated or deleted.
 func (a *resourceDelegate) sendCloudEvent(ctx context.Context, event cloudevents.Event) {
 	event.SetID(uuid.New().String()) // provide an ID here so we can track it with logging
 	defer a.logger.Debug("Finished sending cloudevent id: ", event.ID())

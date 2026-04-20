@@ -288,7 +288,7 @@ func (r *Reconciler) subscribeToBrokerChannel(ctx context.Context, b *eventingv1
 
 		expected = resources.NewSubscription(ctx, t, brokerTrigger, dest, reply, delivery)
 	} else {
-		// in case OIDC is not enabled, we don't need to route everything throuh
+		// in case OIDC is not enabled, we don't need to route everything through
 		// broker-filter because we need it only then to add the token from the
 		// trigger OIDC service account
 		reply = &duckv1.Destination{

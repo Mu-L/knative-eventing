@@ -34,7 +34,7 @@ Small function that demonstrates two concepts:
 1. Deserializing / Serializing data
 2. Using direct reply to modify incoming events (decorating in this example)
 
-Incoming data is assumbed to be CloudEventBaseData with two fields
+Incoming data is assumed to be CloudEventBaseData with two fields
  Sequence int
  Message string
 

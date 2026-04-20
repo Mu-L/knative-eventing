@@ -170,7 +170,7 @@ func (r *Reconciler) ReconcileKind(ctx context.Context, imc *v1.InMemoryChannel)
 	}
 	imc.Status.MarkChannelServiceTrue()
 
-	// If a DeadLetterSink is defined in Spec.Delivery then whe resolve its URI and update the status
+	// If a DeadLetterSink is defined in Spec.Delivery then we resolve its URI and update the status
 	if imc.Spec.Delivery != nil && imc.Spec.Delivery.DeadLetterSink != nil {
 		deadLetterSinkAddr, err := r.uriResolver.AddressableFromDestinationV1(ctx, *imc.Spec.Delivery.DeadLetterSink, imc)
 		if err != nil {

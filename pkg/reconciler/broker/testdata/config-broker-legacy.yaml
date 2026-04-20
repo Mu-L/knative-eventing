@@ -39,11 +39,11 @@ data:
 
     # This defines the default channel template to use for the broker.
     channelTemplateSpec: |
-      # The api and version of the kind of channel to use inthe broker.
+      # The api and version of the kind of channel to use in the broker.
       # This field required.
       apiVersion: messaging.knative.dev/v1
 
-      # The api and version of the kind of channel to use inthe broker.
+      # The api and version of the kind of channel to use in the broker.
       # This field required.
       kind: InMemoryChannel
 

@@ -2,7 +2,7 @@
 
 Knative Eventing has many pieces. Many of those pieces run Kubernetes Pods,
 meaning they run as Kubernetes ServiceAccounts. This document describes Knative
-Eventing's recommended use and re-use of ServiceAccounts.
+Eventing's recommended use and reuse of ServiceAccounts.
 
 ## General Philosophy
 

@@ -101,7 +101,7 @@ func (r *Reconciler) ReconcileKind(ctx context.Context, c *v1.Channel) pkgreconc
 	c.Status.Channel = &backingChannelObjRef
 	c.Status.PropagateStatuses(&backingChannel.Status)
 
-	// If a DeadLetterSink is defined in Spec.Delivery then whe resolve its URI and update the stauts
+	// If a DeadLetterSink is defined in Spec.Delivery then we resolve its URI and update the status
 	if c.Spec.Delivery != nil && c.Spec.Delivery.DeadLetterSink != nil {
 		if backingChannel.Status.DeliveryStatus.IsSet() {
 			c.Status.MarkDeadLetterSinkResolvedSucceeded(backingChannel.Status.DeliveryStatus)
