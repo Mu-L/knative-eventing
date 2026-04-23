@@ -44,6 +44,7 @@ jobs:
             org: knative-extensions
 
     runs-on: ubuntu-latest
+    timeout-minutes: 60
     env:
       GOPATH: ${{ github.workspace }}
     steps:
