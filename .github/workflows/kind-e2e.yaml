@@ -3,6 +3,15 @@ name: KinD e2e tests
 on:
   pull_request:
     branches: [ 'main', 'master' ]
+    paths:
+      - '**/*.go'
+      - 'go.mod'
+      - 'go.sum'
+      - 'config/**'
+      - 'test/**'
+      - 'hack/**'
+      - 'third_party/**'
+      - '.github/workflows/kind-e2e.yaml'
 
 defaults:
   run:
