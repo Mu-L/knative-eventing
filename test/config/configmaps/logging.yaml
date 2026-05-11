@@ -20,6 +20,7 @@ metadata:
   labels:
 
 data:
+  klog-verbosity: "0"
   zap-logger-config: |
     {
       "level": "debug",

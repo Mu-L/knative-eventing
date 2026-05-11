@@ -50,3 +50,8 @@ data:
   # For all components changes are be picked up immediately.
   loglevel.controller: "info"
   loglevel.webhook: "info"
+
+  # klog verbosity level for Kubernetes client-go internals (0-9).
+  # 0 = disabled (default). Higher values produce more verbose output.
+  # Changes are picked up immediately by adapters using ConfigMap-based logging.
+  klog-verbosity: "0"

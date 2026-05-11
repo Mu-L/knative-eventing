@@ -62,12 +62,13 @@ func TestNewConfigWatcher_defaults(t *testing.T) {
 
 			envs := cw.ToEnvVars()
 
-			const expectEnvs = 2
+			const expectEnvs = 3
 			require.Lenf(t, envs, expectEnvs, "there should be %d env var(s)", expectEnvs)
 
 			assert.Equal(t, EnvLoggingCfg, envs[0].Name, "first env var is logging config")
 			assert.Contains(t, envs[0].Value, tc.expectLoggingContains)
-			assert.Contains(t, envs[1].Value, tc.expectObservabilityContains)
+			assert.Equal(t, EnvKlogVerbosity, envs[1].Name, "second env var is klog verbosity")
+			assert.Contains(t, envs[2].Value, tc.expectObservabilityContains)
 		})
 	}
 }
@@ -87,7 +88,7 @@ func TestLoggingConfigWithCustomLoggingLevel(t *testing.T) {
 func TestEmptyVarsGenerator(t *testing.T) {
 	g := &EmptyVarsGenerator{}
 	envs := g.ToEnvVars()
-	const expectEnvs = 2
+	const expectEnvs = 3
 	require.Lenf(t, envs, expectEnvs, "there should be %d env var(s)", expectEnvs)
 }
 
